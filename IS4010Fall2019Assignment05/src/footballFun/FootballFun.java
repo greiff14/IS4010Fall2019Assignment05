@@ -1,5 +1,4 @@
-/*
- * IS4010 Fal 2019
+/* IS4010 Fal 2019
  * Assignment 05
  * Bill Nicholson
  * nicholdw@ucmail.uc.edu
@@ -26,6 +25,24 @@ public class FootballFun {
 		}
 	}
 	public static String translateScore (int score) {
+		
+		if (score == 2) 
+				return ("safety"); // if the team scores 2, then string will return safety
+		else if (score == 3) 
+				return ("field goal"); // if the team score 3, then the string will return field goal 
+		else if (score == 6) 
+				return ("touchdown"); // when the team score 6, the string will return touch down
+		else if (score == 7) 
+				return ("touchdown and extra point"); //when the team add an extra point to touch down, then the string will return touch down and extra point
+		else if (score == 8) 
+				return ("touchdown and 2-point conversion"); // when the team adds 2 points to touch down, then string will return touch down and 2 point conversion 
+		else if (score == -1) 
+				return (""); // when the score = -1, the string will return ""
+		else if (score == 1) 
+				return ("invalid"); // when the score = 1, string will return invalid
+		else if (score == 10) 
+				return ("you must be playing Quidditch "); // when score= 10, string will return you must be playing Quidditch
+		
 		return "";
 	}
 }
